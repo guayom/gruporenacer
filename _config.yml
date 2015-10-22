@@ -1,0 +1,10 @@
+# Site settings
+title: Grupo Renacer Costa Rica
+email: eduardo.mena@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  Los Grupos Renacer son Grupos de Ayuda mutua entre “pares” para padres y madres que enfrenta la muerte de hijos
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://gruporenacercr.com/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

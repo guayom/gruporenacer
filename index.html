@@ -1,0 +1,112 @@
+---
+layout: home
+---
+<!-- One -->
+<section id="one" class="main style1">
+  <div class="container">
+    <header class="major text-center">
+      <h2>¿Cómo los ayudamos?</h2>
+    </header>
+    <div class="row 150%">
+      <div class="4u 12u$(medium)">
+        <p>Renacer cuenta con grupos a los que los padres y madres que han perdido hijos pueden asistir y participar de un verdadero <b>“encuentro entre pares”</b> con otros padres que también han perdido hijos.</p>
+      </div>
+      <div class="4u 12u$(medium)">
+        <p>Renacer ofrece un compañerismo que se basa en la <b>Ayuda Mutua</b>. La ayuda a uno mismo es el resultado de ayudar a un hermano que sufre. Entonces, en nuestros encuentros todos vamos a dar algo y así es cómo recibimos nuestra propia ayuda, el amor que necesitamos y la esperanza para seguir adelante.</p>
+      </div>
+      <div class="4u 12u$(medium)">
+        <p>Renacer Ofrece a los padres una alternativa al tema del duelo. Dándole la  posibilidad caminar junto a otros padres, por el camino de la <b>logoterapia</b> y con amplia libertad para hacer su aprendizaje y encontrar sentido a su vida, a su sufrimiento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="main style2">
+  <div class="container">
+    <header class="major text-center">
+      <h2>¿Cuando y dónde son las reuniones?</h2>
+    </header>
+    <div class="row 150%">
+      <div class="6u 12u$(medium)">
+        <h3>Renacer Calazans</h3>
+          <p>7pm, el Segundo y Cuarto Miércoles de cada mes, en el Colegio Calasanz, San Pedro de Montes de Oca 200 Norte del Más X Menos</p>
+
+        <h3>Renacer Escazú</h3>
+        <p>7pm, los primeros y terceros miércoles de cada mes, en el Edificio Municipal de San Antonio de Escazú que está ubicado diagonal a la Iglesia de San Antonio. Para más información de este grupo por favor póngase en contacto con: Mauren Sosa Hidalgo al Teléfono: 8315 9218</p>
+
+      </div>
+      <div class="6u$ 12u$(medium)">
+        <h3>Renacer Desamparados</h3>
+        <p>7pm, el segundo y cuarto jueves de cada mes, en la casa de Hannia, 300 al Oeste de la Clínica Marcial Fallas, Frente a los Dragones</p>
+
+        <h3>Renacer Tibás</h3>
+        <p>7pm, el Primer y tercer lunes de cada mes, en el Salón Parroquial de la Iglesia San Bruno, en Colima de Tibás, 200 Oeste de EPA</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="main style1 special">
+  <div class="container">
+    <header class="major">
+      <h2>¿Quiénes pueden asistir a las reuniones?</h2>
+    </header>
+    <p>Las reuniones de Renacer son “entre pares” es decir, para los <strong>padres y madres</strong> que han perdido hijos.</p>
+  </div>
+</section>
+
+{% include contacto.html %}
+
+<!-- Contenido -->
+<section id="contacto" class="main style1">
+  <div class="container">
+    <div id="main" role="main" class="container">
+
+      <div class="blog">
+        <div class="row 150%">
+          <div class="6u 12u$(medium) text-center">
+            <header class="major">
+              <h2>Blog</h2>
+            </header>
+            <ul class="post-list">
+              {% for post in site.posts %}
+                <li>
+                  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                  <h3>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  </h3>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="6u 12u$(medium) text-center">
+            <header class="major">
+              <h2>Recursos</h2>
+            </header>
+            <ul class="post-list">
+              <li>
+                <a href="{{ site.url }}download/anuario-renacer-costa-rica-2009.pdf" download="Anuario Renacer Costa Rica 2009">Anuario Renacer Costa Rica 2009</a>
+              </li>
+              <li>
+                <a href="{{ site.url }}download/esencia-y-fundamentos-de-renacer.pdf" download="Escencia y fundamentos de Renacer">Escencia y fundamentos de Renacer</a>
+              </li>
+              <li>
+                <a href="{{ site.url }}download/carta-de-invitacion-a-padres-nuevos.pdf" download="Carta de invitación a padres nuevos">Carta de invitación a padres nuevos</a>
+              </li>
+              <li>
+                <a href="{{ site.url }}download/ausente-mas-no-perdido.pdf" download="Ausente mas no perdido">Ausente mas no perdido</a>
+              </li>
+              <li>
+                <a href="{{ site.url }}download/kubler-ross-elizabeth-la-muerte-un-amanecer.pdf" download="Kubler Ross. La muerte de un amanecer">Elizabeth Kubler Ross. La muerte de us amanecer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+  </div>
+</div>
