@@ -1,0 +1,20 @@
+<!-- Two -->
+<section id="two" class="main style2">
+  <div class="container">
+    <header class="major text-center">
+      <h2>¿Cuando y dónde son las reuniones?</h2>
+    </header>
+    <div class="row 150%">
+      {% for reunion in site.data.reuniones %}
+        <div class="6u 12u$(medium)">
+          <h3>{{ reunion.titulo }}</h3>
+          <p>{{ reunion.descripcion }}</p>
+        </div>
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+          {% if thecycle == 'even' %}
+            <div class="12u 12u$(medium)"></div>
+          {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</section>

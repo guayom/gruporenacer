@@ -2,11 +2,11 @@
 layout: post
 title:  "Carta a los padres y madres"
 date:   2012-06-12 13:57:13
-categories: jekyll update
+categories: blog
 permalink: /blog/:title
 author: Eduardo Mena
 ---
-##Queridos mamas y papas
+##Queridos mamás y papás
 
 La pérdida de un hijo es la experiencia más cercana a la propia muerte que pueda padecer un ser humano.
 

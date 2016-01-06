@@ -1428,6 +1428,9 @@ nav{
 		}
 	}	
 }
+.site-header {
+	
+}
 .site-title{
 	margin:20px 0;
 	display:inline-block;
@@ -1447,4 +1450,20 @@ nav{
 }
 article.post-content{
 	margin:40px 0;
+}
+
+@media screen and (max-width: 980px){
+	.site-header{
+		padding:0 30px;
+	}
+	.post article{
+		max-width:85%;
+		margin:0 auto;
+		padding:30px 0;
+	}
+}
+@media screen and (max-width: 480px){
+	nav.site-nav ul{
+		text-align:left;
+	}
 }

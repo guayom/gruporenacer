@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /recursos
+
+Sitemap: http://gruporenacercr.com/sitemap.xml
