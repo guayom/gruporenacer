@@ -1,7 +1,7 @@
 <ul class="post-list">
   {% for recurso in site.data.recursos %}
     <li>
-      <a href="{{ recurso[1].archivo.path }}.{{recurso[1].archivo.format}}" download="{{recurso[1].titulo}}">{{recurso[1].titulo}}</a>
+      <a href="{{ recurso[1].download }}">{{recurso[1].titulo}}</a>
     </li>
   {% endfor %}
 </ul>
