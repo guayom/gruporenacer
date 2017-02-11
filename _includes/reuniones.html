@@ -1,5 +1,5 @@
 <!-- Two -->
-<section id="two" class="main style2">
+<section id="two" class="main style2 reuniones">
   <div class="container">
     <header class="major text-center">
       <h2>¿Cuando y dónde son las reuniones?</h2>
@@ -7,8 +7,24 @@
     <div class="row 150%">
       {% for reunion in site.data.reuniones %}
         <div class="6u 12u$(medium)">
-          <h3>{{ reunion.titulo }}</h3>
-          <p>{{ reunion.descripcion }}</p>
+          <h3>{{ reunion[1].titulo }}</h3>
+          <ul>
+            <li><strong>¿Dónde? </strong> {{ reunion[1].direccion | strip_html}}</li>
+            <li><strong>¿Cuándo?</strong> {{ reunion[1].horario | strip_html}}</li>
+            {% unless reunion[1].contactos.size == 0 %}
+              <li>Para más información llamar a:
+                <ul>
+                  {% for contacto in reunion[1].contactos %}
+                    <li>
+                      <a class="phone-link" href="tel:{{contacto.entity.payload.attributes.telefono}}">
+                        {{ contacto.entity.payload.attributes.nombre | strip_html}} {{contacto.entity.payload.attributes.telefono}}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endunless %}
+          </ul>
         </div>
         {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
           {% if thecycle == 'even' %}

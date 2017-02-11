@@ -1,0 +1,928 @@
+titulo: Renacer Esparza
+horario: 6pm
+direccion: en las inmediaciones del parque central de esta comunidad
+contactos:
+- &19 !ruby/object:Dato::Local::Item
+  entity: &2 !ruby/object:Dato::Local::JsonApiEntity
+    payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      id: '33984'
+      type: item
+      attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        updated_at: '2017-02-11T12:19:54.912Z'
+        is_valid: true
+        telefono: 8738-1507
+        nombre: Kathia
+        position: 13
+      relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+        item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+          data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+            id: '3283'
+            type: item_type
+    data_source: &1 !ruby/object:Dato::Local::EntitiesRepo
+      entities:
+        site:
+          '558': !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '558'
+              type: site
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                name: Grupo Renacer
+                locales:
+                - en
+                theme_hue: 66
+                domain: 
+                internal_domain: renacercr.admin.datocms.com
+                global_seo: 
+                favicon: 
+                no_index: false
+                frontend_url: 
+                ssg: jekyll
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                account: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '21'
+                    type: account
+                menu_items: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data:
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3676'
+                    type: menu_item
+                item_types: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data:
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+        item_type:
+          '3283': &5 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '3283'
+              type: item_type
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                name: Contactos
+                singleton: false
+                sortable: true
+                api_key: contactos
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                fields: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data:
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13156'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13157'
+                    type: field
+                singleton_item: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: 
+            data_source: *1
+          '3281': &21 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '3281'
+              type: item_type
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                name: Reuniones
+                singleton: false
+                sortable: true
+                api_key: reuniones
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                fields: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data:
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13153'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13154'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13155'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13158'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13159'
+                    type: field
+                  - !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '13160'
+                    type: field
+                singleton_item: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: 
+            data_source: *1
+        field:
+          '13156': &6 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13156'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Nombre
+                field_type: string
+                api_key: nombre
+                hint: 
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  required: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 1
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: plain
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '13157': &7 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13157'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Teléfono
+                field_type: string
+                api_key: telefono
+                hint: 'en este formato: 2222-2222'
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  required: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 2
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: plain
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '13153': &22 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13153'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Titulo
+                field_type: string
+                api_key: titulo
+                hint: 
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  required: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 1
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: title
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '13154': &23 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13154'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Horario
+                field_type: string
+                api_key: horario
+                hint: 
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  required: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 2
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: plain
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '13155': &24 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13155'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Dirección
+                field_type: text
+                api_key: direccion
+                hint: 
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  required: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 3
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: wysiwyg
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '13158': &25 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13158'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Contactos
+                field_type: links
+                api_key: contactos
+                hint: Crear un nuevo contacto para cada persona a la que se puede
+                  contactar
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  items_item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    item_types:
+                    - '3283'
+                position: 4
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  type: embed
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '13159': &26 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13159'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Location
+                field_type: lat_lon
+                api_key: location
+                hint: 
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 5
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '13160': &27 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '13160'
+              type: field
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                label: Afiche
+                field_type: file
+                api_key: afiche
+                hint: Afiche de cada reunión
+                localized: false
+                validators: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+                position: 6
+                appeareance: !ruby/hash:ActiveSupport::HashWithIndifferentAccess {}
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+        item:
+          '33985': &36 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '33985'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2017-02-11T12:20:26.872Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '33984'
+                direccion: en las inmediaciones del parque central de esta comunidad
+                horario: 6pm
+                titulo: Renacer Esparza
+                position: 10
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '33984': *2
+          '21562': &35 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21562'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T16:06:07.404Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21557'
+                - '21558'
+                direccion: "<p>50 m Oeste de la esquina Sur Oeste del Parque de Barva,
+                  Frente a Importadora Monge</p>"
+                horario: 7pm, el primer y tercer miércoles de cada mes
+                titulo: Renacer Barva
+                position: 9
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21558': &18 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21558'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T16:01:57.773Z'
+                is_valid: true
+                telefono: 8817 8684
+                nombre: Miguel
+                position: 12
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21557': &17 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21557'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T16:01:43.577Z'
+                is_valid: true
+                telefono: 8615-8007
+                nombre: Auria
+                position: 11
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21556': &34 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21556'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T16:00:55.234Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21555'
+                direccion: "<p>Aula de RCP, Edificio Ministerio Árbol de Vida, contiguo
+                  al parque este del Hospital Clínica Bíblica</p>"
+                horario: 6pm el primer y tercer jueves de cada mes
+                titulo: Clínica Bíblica
+                position: 8
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21555': &16 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21555'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T16:00:44.736Z'
+                is_valid: true
+                telefono: 7017-6640
+                nombre: Ruth Altamirano
+                position: 10
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21550': &33 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21550'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:57:16.880Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos: []
+                direccion: "<p>Centro Comercial Don Luis, diagonal al Estadio Municipal</p>"
+                horario: 1pm, El último sábado del mes
+                titulo: Perez Zeledón
+                position: 7
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21548': &32 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21548'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:54:52.476Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21547'
+                direccion: "<p>Salón comunal de la urbanización Murillo, 25 m al oeste
+                  del INA de Grecia</p>"
+                horario: 7pm, el segundo y cuarto lunes de cada mes
+                titulo: Renacer Grecia
+                position: 6
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21547': &15 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21547'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:54:27.673Z'
+                is_valid: true
+                telefono: 6023-8166
+                nombre: Doña Ana
+                position: 9
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21546': &31 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21546'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:53:31.043Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21544'
+                - '21545'
+                direccion: "<p>En las inmediaciones del Parque Central de Ciudad Quesada</p>"
+                horario: El último sábado del mes
+                titulo: Renacer Ciudad Quesada
+                position: 5
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21545': &14 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21545'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:53:22.850Z'
+                is_valid: true
+                telefono: 8658-0779
+                nombre: Andrea
+                position: 8
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21544': &13 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21544'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:53:07.314Z'
+                is_valid: true
+                telefono: 8368-1030
+                nombre: Caret
+                position: 7
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21543': &30 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21543'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:51:50.369Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21541'
+                - '21542'
+                direccion: "<p>En el Salón Parroquial de la Iglesia San Bruno, en
+                  Colima de Tibás, 200 Oeste de EPA</p>"
+                horario: 7pm, el primer y tercer lunes de cada mes
+                titulo: Renacer Tibás
+                position: 4
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21542': &12 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21542'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:51:46.761Z'
+                is_valid: true
+                telefono: 7012-2076
+                nombre: Alonso Zumbado
+                position: 6
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21541': &11 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21541'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:51:32.720Z'
+                is_valid: true
+                telefono: 8890-3367
+                nombre: Vivi Solís
+                position: 5
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21540': &29 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21540'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:50:49.574Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21539'
+                direccion: "<p>En el Museo Joaquín García Monge, del Palacio Municipal,
+                  100 m este y 25 m norte</p>"
+                horario: 7pm, el primer y tercer martes de cada mes
+                titulo: Renacer Desamparados
+                position: 3
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21539': &10 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21539'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:50:41.726Z'
+                is_valid: true
+                telefono: 7017-5957
+                nombre: Eduardo Mena
+                position: 4
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21538': &28 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21538'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:49:46.146Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21537'
+                direccion: "<p>del Mas X Menos de San Pedro, 300 m al norte, Colegio
+                  Calasanz, Aulas de Secundaría A1</p>"
+                horario: 7pm, el segundo y cuarto miércoles de cada mes
+                titulo: Renacer San Pedro de Montes de Oca
+                position: 2
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21537': &9 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21537'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:48:38.461Z'
+                is_valid: true
+                telefono: 2100-9402
+                nombre: Doña Rosi
+                position: 3
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21536': &20 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21536'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:47:51.678Z'
+                is_valid: true
+                afiche: 
+                location: 
+                contactos:
+                - '21534'
+                - '21535'
+                direccion: "<p>Salón Municipal de San Antonio de Escazú, diagonal
+                  a la Iglesia Católica de esta comunidad</p>"
+                horario: 7pm, los primeros y terceros miércoles de cada mes
+                titulo: Renacer Escazú
+                position: 1
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3281'
+                    type: item_type
+            data_source: *1
+          '21535': &8 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21535'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:47:42.164Z'
+                is_valid: true
+                telefono: 8882-1912
+                nombre: Roxana
+                position: 2
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+          '21534': &3 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '21534'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2016-11-17T15:47:23.260Z'
+                is_valid: true
+                telefono: 8315-9218
+                nombre: Mauren Sosa Hidalgo
+                position: 1
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '3283'
+                    type: item_type
+            data_source: *1
+  items_repo: &4 !ruby/object:Dato::Local::ItemsRepo
+    entities_repo: *1
+    collections_by_type:
+      :contactos: !ruby/array:Dato::Local::ItemsRepo::ItemCollection
+      - &58 !ruby/object:Dato::Local::Item
+        entity: *3
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &57 !ruby/object:Dato::Local::Item
+        entity: *8
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &55 !ruby/object:Dato::Local::Item
+        entity: *9
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &53 !ruby/object:Dato::Local::Item
+        entity: *10
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &51 !ruby/object:Dato::Local::Item
+        entity: *11
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &50 !ruby/object:Dato::Local::Item
+        entity: *12
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &48 !ruby/object:Dato::Local::Item
+        entity: *13
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &47 !ruby/object:Dato::Local::Item
+        entity: *14
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &45 !ruby/object:Dato::Local::Item
+        entity: *15
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &42 !ruby/object:Dato::Local::Item
+        entity: *16
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &40 !ruby/object:Dato::Local::Item
+        entity: *17
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - &39 !ruby/object:Dato::Local::Item
+        entity: *18
+        items_repo: *4
+        item_type: *5
+        fields:
+        - *6
+        - *7
+      - *19
+      :reuniones: !ruby/array:Dato::Local::ItemsRepo::ItemCollection
+      - &56 !ruby/object:Dato::Local::Item
+        entity: *20
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &54 !ruby/object:Dato::Local::Item
+        entity: *28
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &52 !ruby/object:Dato::Local::Item
+        entity: *29
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &49 !ruby/object:Dato::Local::Item
+        entity: *30
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &46 !ruby/object:Dato::Local::Item
+        entity: *31
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &44 !ruby/object:Dato::Local::Item
+        entity: *32
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &43 !ruby/object:Dato::Local::Item
+        entity: *33
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &41 !ruby/object:Dato::Local::Item
+        entity: *34
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &38 !ruby/object:Dato::Local::Item
+        entity: *35
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+      - &37 !ruby/object:Dato::Local::Item
+        entity: *36
+        items_repo: *4
+        item_type: *21
+        fields:
+        - *22
+        - *23
+        - *24
+        - *25
+        - *26
+        - *27
+    items_by_id:
+      '33985': *37
+      '33984': *19
+      '21562': *38
+      '21558': *39
+      '21557': *40
+      '21556': *41
+      '21555': *42
+      '21550': *43
+      '21548': *44
+      '21547': *45
+      '21546': *46
+      '21545': *47
+      '21544': *48
+      '21543': *49
+      '21542': *50
+      '21541': *51
+      '21540': *52
+      '21539': *53
+      '21538': *54
+      '21537': *55
+      '21536': *56
+      '21535': *57
+      '21534': *58
+    item_type_methods:
+      *5: :contactos
+      *21: :reuniones
+  item_type: *5
+  fields:
+  - *6
+  - *7
+location: 
+afiche: 

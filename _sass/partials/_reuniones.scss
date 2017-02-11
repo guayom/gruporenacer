@@ -1,0 +1,27 @@
+.reuniones{
+  h3{
+    margin-bottom: 15px;
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    ul{
+      margin: 0;
+    }
+  }
+  li{
+    margin: 0;
+    padding: 0;
+  }
+  .phone-link:before{
+    content: "\f095";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 0.7em;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 5px;
+  }
+}
