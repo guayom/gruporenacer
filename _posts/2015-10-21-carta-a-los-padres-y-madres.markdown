@@ -6,7 +6,7 @@ categories: blog
 permalink: /blog/:title
 author: Eduardo Mena
 ---
-##Queridos mamás y papás
+## Queridos mamás y papás
 
 La pérdida de un hijo es la experiencia más cercana a la propia muerte que pueda padecer un ser humano.
 
