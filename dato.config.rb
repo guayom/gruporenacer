@@ -9,3 +9,10 @@ directory "_data/reuniones/" do
       afiche: reunion.afiche
   end
 end
+directory "_data/recursos/" do
+  dato.recursos.each_with_index do |recurso, index|
+    create_data_file "#{index}-#{recurso.titulo.parameterize}.yml", :yaml,
+      titulo: recurso.titulo,
+      archivo: recurso.archivo
+  end
+end

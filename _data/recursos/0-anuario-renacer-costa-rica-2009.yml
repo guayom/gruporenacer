@@ -1,0 +1,5 @@
+titulo: Anuario Renacer Costa Rica 2009
+archivo: !ruby/object:Dato::Local::FieldType::File
+  path: "/558/1486824869-anuario-renacer-costa-rica-2009-pdf"
+  format: pdf
+  size: 9217158

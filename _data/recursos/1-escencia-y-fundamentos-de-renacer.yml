@@ -1,0 +1,5 @@
+titulo: Escencia y fundamentos de Renacer
+archivo: !ruby/object:Dato::Local::FieldType::File
+  path: "/558/1486824945-esencia-y-fundamentos-de-renacer-pdf"
+  format: pdf
+  size: 192800

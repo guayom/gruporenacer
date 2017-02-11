@@ -1,0 +1,5 @@
+titulo: Ausente mas no perdido
+archivo: !ruby/object:Dato::Local::FieldType::File
+  path: "/558/1486824988-ausente-mas-no-perdido-pdf"
+  format: pdf
+  size: 183527
