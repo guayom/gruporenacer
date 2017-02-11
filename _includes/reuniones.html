@@ -4,7 +4,7 @@
       <h2>¿Cuándo y dónde son las reuniones?</h2>
     </header>
     <div class="row 150%">
-      {% for reunion in site.data.reuniones %}
+      {% for reunion in site.data.reuniones  | sort_by: "position" %}
         <div class="6u 12u$(medium)">
           <h3>{{ reunion[1].titulo }}</h3>
           <ul>

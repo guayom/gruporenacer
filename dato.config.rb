@@ -6,7 +6,8 @@ directory "_data/reuniones/" do
       direccion: reunion.direccion,
       contactos: reunion.contactos,
       location: reunion.location,
-      afiche: reunion.afiche
+      afiche: reunion.afiche,
+      position: index
   end
 end
 directory "_data/recursos/" do
@@ -14,6 +15,7 @@ directory "_data/recursos/" do
     create_data_file "#{index}-#{recurso.titulo.parameterize}.yml", :yaml,
       titulo: recurso.titulo,
       archivo: recurso.archivo,
-      download: "https://dato-images.imgix.net#{recurso.archivo.path}?dl=#{recurso.titulo.parameterize}"
+      download: "https://dato-images.imgix.net#{recurso.archivo.path}?dl=#{recurso.titulo.parameterize}",
+      position: index
   end
 end

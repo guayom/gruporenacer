@@ -349,7 +349,26 @@ contactos:
                     type: item_type
             data_source: *1
         item:
-          '33997': &11 !ruby/object:Dato::Local::JsonApiEntity
+          '33993': &11 !ruby/object:Dato::Local::JsonApiEntity
+            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+              id: '33993'
+              type: item
+              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                updated_at: '2017-02-11T15:23:58.222Z'
+                is_valid: true
+                archivo: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  path: "/558/1486824869-anuario-renacer-costa-rica-2009-pdf"
+                  size: 9217158
+                  format: pdf
+                titulo: Anuario Renacer Costa Rica 2009
+                position: 5
+              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+                    id: '5295'
+                    type: item_type
+            data_source: *1
+          '33997': &10 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '33997'
               type: item
@@ -361,14 +380,14 @@ contactos:
                   size: 312967
                   format: pdf
                 titulo: Elizabeth Kubler Ross. La muerte de un amanecer
-                position: 5
+                position: 4
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                     id: '5295'
                     type: item_type
             data_source: *1
-          '33996': &10 !ruby/object:Dato::Local::JsonApiEntity
+          '33996': &9 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '33996'
               type: item
@@ -380,14 +399,14 @@ contactos:
                   size: 183527
                   format: pdf
                 titulo: Ausente mas no perdido
-                position: 4
+                position: 3
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                     id: '5295'
                     type: item_type
             data_source: *1
-          '33995': &9 !ruby/object:Dato::Local::JsonApiEntity
+          '33995': &8 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '33995'
               type: item
@@ -399,14 +418,14 @@ contactos:
                   size: 87730
                   format: pdf
                 titulo: Carta de invitación a padres nuevos
-                position: 3
+                position: 2
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                     id: '5295'
                     type: item_type
             data_source: *1
-          '33994': &8 !ruby/object:Dato::Local::JsonApiEntity
+          '33994': &3 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '33994'
               type: item
@@ -418,25 +437,6 @@ contactos:
                   size: 192800
                   format: pdf
                 titulo: Escencia y fundamentos de Renacer
-                position: 2
-              relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                    id: '5295'
-                    type: item_type
-            data_source: *1
-          '33993': &3 !ruby/object:Dato::Local::JsonApiEntity
-            payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-              id: '33993'
-              type: item
-              attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                updated_at: '2017-02-11T14:55:35.386Z'
-                is_valid: true
-                archivo: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                  path: "/558/1486824869-anuario-renacer-costa-rica-2009-pdf"
-                  size: 9217158
-                  format: pdf
-                titulo: Anuario Renacer Costa Rica 2009
                 position: 1
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
@@ -1094,11 +1094,11 @@ contactos:
         - *34
         - *35
     items_by_id:
-      '33997': *45
-      '33996': *46
-      '33995': *47
-      '33994': *48
-      '33993': *49
+      '33993': *45
+      '33997': *46
+      '33996': *47
+      '33995': *48
+      '33994': *49
       '33985': *50
       '33984': *51
       '21562': *52
@@ -1133,3 +1133,4 @@ contactos:
 - *71
 location: 
 afiche: 
+position: 0
