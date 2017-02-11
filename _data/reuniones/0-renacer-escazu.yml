@@ -36,7 +36,7 @@ contactos:
                 global_seo: 
                 favicon: 
                 no_index: false
-                frontend_url: 
+                frontend_url: https://gruporenacercr.com
                 ssg: jekyll
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 account: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
@@ -281,12 +281,12 @@ contactos:
                     type: item_type
             data_source: *1
         item:
-          '33985': &36 !ruby/object:Dato::Local::JsonApiEntity
+          '33985': &35 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '33985'
               type: item
               attributes: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
-                updated_at: '2017-02-11T12:20:26.872Z'
+                updated_at: '2017-02-11T14:12:48.209Z'
                 is_valid: true
                 afiche: 
                 location: 
@@ -295,7 +295,7 @@ contactos:
                 direccion: en las inmediaciones del parque central de esta comunidad
                 horario: 6pm
                 titulo: Renacer Esparza
-                position: 10
+                position: 9
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
@@ -318,7 +318,7 @@ contactos:
                     id: '3283'
                     type: item_type
             data_source: *1
-          '21562': &35 !ruby/object:Dato::Local::JsonApiEntity
+          '21562': &36 !ruby/object:Dato::Local::JsonApiEntity
             payload: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
               id: '21562'
               type: item
@@ -334,7 +334,7 @@ contactos:
                   Frente a Importadora Monge</p>"
                 horario: 7pm, el primer y tercer miércoles de cada mes
                 titulo: Renacer Barva
-                position: 9
+                position: 10
               relationships: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                 item_type: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
                   data: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
@@ -872,7 +872,7 @@ contactos:
         - *25
         - *26
         - *27
-      - &39 !ruby/object:Dato::Local::Item
+      - &37 !ruby/object:Dato::Local::Item
         entity: *35
         items_repo: *5
         item_type: *21
@@ -883,7 +883,7 @@ contactos:
         - *25
         - *26
         - *27
-      - &37 !ruby/object:Dato::Local::Item
+      - &39 !ruby/object:Dato::Local::Item
         entity: *36
         items_repo: *5
         item_type: *21
