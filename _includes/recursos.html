@@ -1,7 +1,7 @@
 <ul class="post-list">
   {% for recurso in site.data.recursos | sort_by: "position" %}
     <li>
-      <a href="{{ recurso[1].download }}" download="{{recurso[1].titulo}}">{{recurso[1].titulo}}</a>
+      <a href="{{ recurso[1].url }}" download="{{recurso[1].titulo}}">{{recurso[1].titulo}}</a>
     </li>
   {% endfor %}
 </ul>

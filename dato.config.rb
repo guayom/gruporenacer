@@ -16,6 +16,7 @@ directory "_data/recursos/" do
       titulo: recurso.titulo,
       archivo: recurso.archivo,
       download: "https://dato-images.imgix.net#{recurso.archivo.path}?dl=#{recurso.titulo.parameterize}",
+      url: recurso.archivo.url,
       position: index
   end
 end
