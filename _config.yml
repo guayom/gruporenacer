@@ -4,7 +4,7 @@ email: eduardo.mena@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   Los Grupos Renacer son Grupos de ayuda mutua entre “pares” para padres y madres que enfrentan la muerte de hijos
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gruporenacercr.com" # the base hostname & protocol for your site
+url: "https://gruporenacercr.com" # the base hostname & protocol for your site
 
 gems:
   - jekyll-sitemap
