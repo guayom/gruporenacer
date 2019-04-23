@@ -1699,7 +1699,7 @@ contactos:
   items_repo: &5 !ruby/object:Dato::Local::ItemsRepo
     entities_repo: *1
     collections_by_type:
-      :contactos: !ruby/array:Dato::Local::ItemsRepo::ItemCollection
+      :contactos:
       - *3
       - &91 !ruby/object:Dato::Local::Item
         entity: *4
@@ -1834,7 +1834,7 @@ contactos:
         fields:
         - *7
         - *8
-      :reuniones: !ruby/array:Dato::Local::ItemsRepo::ItemCollection
+      :reuniones:
       - &76 !ruby/object:Dato::Local::Item
         entity: *27
         items_repo: *5
@@ -1978,7 +1978,7 @@ contactos:
         - *32
         - *33
         - *34
-      :recursos: !ruby/array:Dato::Local::ItemsRepo::ItemCollection
+      :recursos:
       - &70 !ruby/object:Dato::Local::Item
         entity: *47
         items_repo: *5
