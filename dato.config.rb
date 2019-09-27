@@ -7,6 +7,7 @@ directory "_data/reuniones/" do
       contactos: reunion.contactos,
       location: reunion.location,
       afiche: reunion.afiche,
+      notas: reunion.notas,
       position: index
   end
 end

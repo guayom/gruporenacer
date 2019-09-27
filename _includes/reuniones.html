@@ -24,6 +24,7 @@
               </li>
             {% endunless %}
           </ul>
+          {{ reunion[1].notas | strip_html }}
         </div>
         {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
           {% if thecycle == 'even' %}
